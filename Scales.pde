@@ -3,7 +3,7 @@ void setup() {
   noLoop();
 }
 void draw() {
-  for (int x = 0; x < 500; x = x + 30)
+  for (int x = 0; x < 500; x = x + 20)
     for (int y = 0; y < 500; y = y + 40)
       scale(x, y);
 }
