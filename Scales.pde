@@ -1,11 +1,26 @@
 void setup() {
-  size(500, 500);  //feel free to change the size
-  noLoop(); //stops the draw() function from repeating
+  size(500, 500);
+  noLoop();
 }
 void draw() {
-  //your code here
+  for (int x = 0; x < 500; x = x + 30)
+    for (int y = 0; y < 500; y = y + 40)
+      scale(x, y);
 }
 void scale(int x, int y) {
-  //your code here
-}
+  noStroke();
+  Math.random();
+  fill(255, 0, 0);
 
+  triangle(x, y+10, x+40, y+10, x+20, y+39);
+
+
+  triangle(x, y+10, x+40, y+10, x+20, y+39);
+
+  fill(128, 128, 128);
+  rect(x, y, 40, 10);
+
+  fill(0, 255, 255);
+
+  ellipse(x+20, y+20, 10, 10);
+}
